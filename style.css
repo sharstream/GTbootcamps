@@ -53,6 +53,10 @@ body {
     color: black;
 }
 
+table, th, td {
+    border: 1px solid black;
+}
+
 #box {
 	height: 100px;
 	width: 100px;

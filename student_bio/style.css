@@ -1,0 +1,32 @@
+.head1 {
+    color: white;
+    background-color: black;
+    font-family: arial, sans-serif;
+    text-align: center;
+}
+.bd {
+    margin: auto;
+    width: 95%;
+    text-align: center;
+}
+
+h2, ul, p{
+    text-align: center;
+}
+
+.container{
+    width: 95%;
+    background-color: bisque;
+    display:inline-flex;
+    padding: 25px;
+}
+
+#headertwo ul li{
+ text-align: left;
+}
+
+.image{
+    width: 100px;
+    float: left;
+    padding: 0 25px 0 0;
+}
