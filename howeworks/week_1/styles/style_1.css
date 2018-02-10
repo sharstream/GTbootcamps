@@ -18,7 +18,7 @@ body {
     color: black;
 }
 
-#nav ul li {
+ul, li {
     float: left;
     width: 200px;
     height: 40px;

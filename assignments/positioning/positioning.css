@@ -1,0 +1,38 @@
+body {
+
+}
+
+p {
+
+}
+
+.fixed {
+    background-color: lightgrey;
+    width: 150px;
+    height: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.rel_absolute {
+
+}
+
+.relative {
+    background-color: lightgrey;
+    width: 500px;
+    height: 45%;
+    position: relative;
+    top: 0;
+    left: 250px;
+}
+
+.absolute {
+    background-color: grey;
+    right: -27px;
+    bottom: 0;
+    width: 150px;
+    position: absolute;
+    height: 75px;
+}
