@@ -1,0 +1,66 @@
+body {
+    background-color: beige;
+}
+
+.border {
+    background-color: grey;
+    width: 52.5%;
+    height: 2px;
+}
+
+h1, h2{
+    color: seagreen;
+}
+
+.borderconnect {
+    background-color: grey;
+    height: 2px;
+    width: 60%;
+}
+
+.connect {
+    background-color: white;
+    width: 35%;
+}
+
+.rigth_container {
+    padding-top: 10px;
+    float: rigth;
+    display: inline;
+}
+
+.images {
+    margin-top: 20px
+}
+/*
+.left {
+    float: left;
+}
+
+.rigth {
+    float: left;
+    margin-left: 25px;
+}
+
+.middle_left {
+    margin-top: 35px;
+}
+
+.middle_rigth {
+    margin-top: 35px;
+}
+*/
+.keeptogether {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 0;
+    word-spacing: -4px;
+}
+
+#logo {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23px;
+}

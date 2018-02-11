@@ -1,0 +1,97 @@
+.head1 {
+    color: seagreen;
+    background-color: white;
+    font-family: arial, sans-serif;
+    text-align: center;
+}
+.bd {
+    margin: auto;
+    width: 95%;
+    text-align: center;
+}
+
+h1 {
+    background-color: green;
+    color: white;
+    width: 20%;
+    height: 75px;
+    text-align: center;
+    align-items: center;
+}
+
+h2, ul, p{
+    text-align: center;
+}
+
+.top_container {
+    background-color: powderblue;
+}
+
+.container{
+    background-color: bisque;
+    padding: 25px;
+    width: 50%;
+    margin-left: 80px;
+}
+
+#logo {
+    float: right;
+    display: block;
+}
+
+img.resize {
+    width: 25px;
+    height: auto;
+}
+
+#headertwo ul li{
+ text-align: left;
+}
+
+.image{
+    width: 100px;
+    float: left;
+    padding: 0 25px 0 0;
+}
+
+.borderconnect {
+    background-color: grey;
+    height: 2px;
+    width: 60%;
+}
+
+.connect {
+    background-color: white;
+    width: 35%;
+}
+
+#logo {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23px;
+}
+
+#border {
+    background-color: seagreen;
+    width: auto;
+    height: 8px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: slategray;
+    color: white;
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    width: auto;
+}
+
+.foot {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
