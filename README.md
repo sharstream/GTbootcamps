@@ -1,2 +1,2 @@
-# HW-Wireframe
+# GT bootcamps
 Georgia Tech Coding Bootcamp
