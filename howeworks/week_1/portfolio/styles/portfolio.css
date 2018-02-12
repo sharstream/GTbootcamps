@@ -1,15 +1,64 @@
 body {
-    background-color: beige;
+    background: url(../images/background.jpg) no-repeat;
 }
 
 .border {
     background-color: grey;
-    width: 52.5%;
+    width: 95%;
     height: 2px;
 }
 
 h1, h2{
     color: seagreen;
+}
+
+header {
+    position:relative;
+    display:block;
+    max-width:100%;
+    height:100%;
+    margin:0 auto;
+    padding:1rem 5rem;
+    background:white;
+    color:#fff;
+}
+header h1 {
+    line-height: 45px;
+    font-size: 2rem;
+    margin: 0;
+    display:inline;
+}
+nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    float:right;
+    display:inline;
+}
+
+nav  li {
+    position:relative;
+    display:inline-block;
+    list-style-type: none;
+    font-family: "Open Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+    color: #222;
+    padding:0 1rem;
+}
+nav li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+nav > li > a:hover,
+nav > li > a:focus {
+    text-decoration: none;
+    background-color: #eee;
+}
+
+.top_container{
+    background-color: white;
+    width: 60%;
+    height: 800px;
 }
 
 .borderconnect {
@@ -25,31 +74,13 @@ h1, h2{
 
 .rigth_container {
     padding-top: 10px;
-    float: rigth;
     display: inline;
 }
 
 .images {
     margin-top: 20px
 }
-/*
-.left {
-    float: left;
-}
 
-.rigth {
-    float: left;
-    margin-left: 25px;
-}
-
-.middle_left {
-    margin-top: 35px;
-}
-
-.middle_rigth {
-    margin-top: 35px;
-}
-*/
 .keeptogether {
     width: 100%;
     overflow: hidden;
