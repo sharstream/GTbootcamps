@@ -10,6 +10,7 @@ body {
 
 h1, h2{
     color: seagreen;
+    text-align: center;
 }
 
 header {
@@ -59,22 +60,29 @@ nav > li > a:focus {
     background-color: white;
     width: 60%;
     height: 800px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 45px;
 }
 
 .borderconnect {
     background-color: grey;
     height: 2px;
     width: 60%;
+    margin-left: 45px;
 }
 
 .connect {
     background-color: white;
-    width: 35%;
 }
 
 .rigth_container {
-    padding-top: 10px;
+    /* padding-top: 10px; */
     display: inline;
+    float: left;
+    width: 250px;
+    margin-left: 35px;
+    margin-top: 31px;
 }
 
 .images {
@@ -91,7 +99,7 @@ nav > li > a:focus {
 
 #logo {
     align-items: center;
-    margin-left: auto;
+    margin-left: 40px;
     margin-right: auto;
     margin-top: 23px;
 }
