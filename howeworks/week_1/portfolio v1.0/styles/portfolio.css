@@ -65,6 +65,18 @@ nav > li > a:focus {
     margin-left: 45px;
 }
 
+.images {
+    margin-top: 20px
+}
+
+.keeptogether {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 0;
+    word-spacing: -4px;
+}
+
 .borderconnect {
     background-color: grey;
     height: 2px;
@@ -83,18 +95,6 @@ nav > li > a:focus {
     width: 250px;
     margin-left: 35px;
     margin-top: 31px;
-}
-
-.images {
-    margin-top: 20px
-}
-
-.keeptogether {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    line-height: 0;
-    word-spacing: -4px;
 }
 
 #logo {
