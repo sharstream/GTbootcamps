@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me | Send Me a Message</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="David Perez">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <section class="container-fluid">
+                <div class="row">
+                    <div class="col-md-1 col-sm-auto"></div>
+                    <div class="col-md-4 col-sm-12" id="myName">
+                        David Perez
+                    </div>
+                    <div class="col-md-1 col-sm-auto"></div>
+                    <nav class="col-md-6 col-sm-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class="navButton col" id="aboutButton">
+                                    <a href="index.html">About</a>
+                                </div>
+                                <div class="navButton col" id="portButton">
+                                    <a href="portfolio.html">Portfolio</a>
+                                </div>
+                                <div class="navButton col" id="contactButton">
+                                    <a href="contact.html">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+        </header>
+        <div class="container" id="bodyContent">
+            <div class="col-md-8 col-xs-12">
+                <section id="mainContent">
+                    <form id="contact" action="" method="post">
+                        <h3>Quick Contact</h3>
+                        <h4>Contact us today, and get reply with in 24 hours!</h4>
+                        <fieldset>
+                            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+                        </fieldset>
+                        <fieldset>
+                            <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                        </fieldset>
+                    </form>
+                </section>
+            </div>
+            <section class="col-md-4 col-xs-12" id="sideBar">
+                <div class="row">
+                    <h2 class="col-12">Connect With Me</h2>
+                </div>
+                <div class="row">
+                    <a href="https://github.com/sharstream" class="socialIcon col-4">
+                        <div id="gitHubIconRed"></div>
+                        <div id="gitHubIconBlack"></div>
+                    </a>
+                    <a id="middleIcon" href="https://www.linkedin.com/in/davedevelopmentusa/" class="socialIcon col-4">
+                        <div id="linkedinIconRed"></div>
+                        <div id="linkedinIconBlack"></div>
+                    </a>
+                    <a href="https://salesforce.stackexchange.com/users/28770/dave" class="socialIcon col-4">
+                        <div id="stackIconRed"></div>
+                        <div id="stackIconBlack"></div>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div class="push"></div>
+    </div>
+    <footer>
+        <p id="copyright">
+            &copy; Copyright 2018 David Perez Portfolio
+        </p>
+    </footer>
+</body>
+</html>
