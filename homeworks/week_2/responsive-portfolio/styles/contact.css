@@ -65,6 +65,11 @@ nav {
     text-decoration: none;
 }
 
+#bodyContent {
+    width: 960px;
+    margin: 0 auto;
+}
+
 #bodyContent::after {
     content: "";
     display: block;
@@ -84,33 +89,6 @@ nav {
     line-height: 2em;
 }
 
-#mainContent p {
-    margin: 16px 0px 16px 0px;
-    text-indent: 30px;
-}
-
-#profilePic {
-    width: 240px;
-    height: 240px;
-    float: left;
-    margin: 0px 20px 10px 0px;
-}
-
-.thumbnail {
-    position: relative;
-    margin-bottom: 40px;
-    cursor: pointer;
-    transition: all .8s ease;
-}
-
-.thumbnail:hover {
-    transform: scale(1.1);
-}
-
-.thumbnail img {
-    max-width: 100%;
-}
-
 .left {
     float: left;
 }
@@ -119,45 +97,94 @@ nav {
     float: right;
 }
 
-.label {
-    position: absolute;
-    bottom: 20px;
-    left: 15px;
-    height: 60px;
-    line-height: 60px;
-    width: calc(100% - 30px);
-    text-align: center;
-    color: white;
-    font-size: 1.2em;
-    background-color: rgba(74, 170, 165, .7);
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+   /*background: #F9F9F9; */
+    padding: 25px;
+    margin: 50px 0;
+    margin-left: 25px;
+    /* display: inline-block; */
+    box-shadow: auto #333333;
 }
 
-form {
-    width: 100%;
+#contact h3 {
+	color: #4aaaa5;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
 }
 
-textarea {
-    resize: none;
-    width: calc(100% - 20px);
-    font-size: 1em;
-    padding: 5px 5px 5px 15px;
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
 }
 
-input {
-    width: calc(100% - 20px);
-    padding: 5px 5px 5px 15px;
-    font-size: .8em;
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
 }
 
-#submitButton {
-    background-color: #4aaaa5;
-    border: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1em;
-    width: auto;
-    padding: 8px 16px 8px 16px;
-    cursor: pointer;
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#4aaaa5;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background: seagreen;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
 }
 
 #sideBar {
@@ -229,7 +256,7 @@ input {
 #stackIconBlack:hover {
     opacity: 0;
 }
-/* Height of the footer and height of the blank div that is added to the body to stop the footer from overlapping body content. */
+
 footer, .push {
     height: 80px;
 }
@@ -244,4 +271,74 @@ footer {
 
 #copyright {
     margin: 0px;
+}
+
+/* Additional Screen Sizes */
+
+/* Width at 980px and below */
+@media screen and (max-width: 980px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+/* Additional Screen Sizes */
+
+/* Width at 768px and below */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+/* Width at 640px and below */
+@media screen and (max-width: 640px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
 }

@@ -229,7 +229,7 @@ input {
 #stackIconBlack:hover {
     opacity: 0;
 }
-
+/* Height of the footer and height of the blank div that is added to the body to stop the footer from overlapping body content. */
 footer, .push {
     height: 80px;
 }
@@ -244,4 +244,74 @@ footer {
 
 #copyright {
     margin: 0px;
+}
+
+/* Additional Screen Sizes */
+
+/* Width at 980px and below */
+@media screen and (max-width: 980px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+/* Additional Screen Sizes */
+
+/* Width at 768px and below */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+/* Width at 640px and below */
+@media screen and (max-width: 640px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
 }
