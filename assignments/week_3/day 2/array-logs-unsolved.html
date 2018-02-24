@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Array Printing</title>
+  </head>
+  <body>
+
+    <h1>Open the console to see the magic!</h1>
+
+    <script>
+
+    // Use this Array
+    var coolPeople = ["BRUCE LEE", "ARNOLD schwarzenegger", "WILL smith", "ESTHER", "MARIE curie", "JOAN of arc"];
+
+    // Then use console.log to print each of the names listed inside.
+    // ...
+    coolPeople[0] = coolPeople[0].toLowerCase();// change a value to lower case
+
+    coolPeople.forEach(function (item, index, array) {
+        item = coolPeople[index].toLowerCase();
+        console.log(item, index);
+    }); 
+
+    // CODE GOES HERE
+
+
+    // ...
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+</head>
+
+<body>
+
+    <h1>Open the console to see the magic!</h1>
+
+    <script>
+
+        // Array of zoo animals.
+        var zooAnimals = ["Zebra", "Rhino", "Giraffe", "Owl"];
+
+        // Rewrite the following code to print all of the animals using a for-loop.
+        // console.log(zooAnimals[0]);
+        // console.log(zooAnimals[1]);
+        // console.log(zooAnimals[2]);
+        // console.log(zooAnimals[3]);
+        //making a call a function passing a for-loop
+        // function printElem(list) {
+        //     list.forEach(function (item, index, array) {
+        //         console.log(item);
+        //     });
+        // }
+
+        // printElem(zooAnimals);
+        //magic happen
+        // var arr = [3, 5, 7];
+        zooAnimals.push('Tiger');
+        var last_element = zooAnimals[zooAnimals.length - 1];
+    function magicHappen(list) {
+            for (var i in list) {
+                console.log(i); // logs "0", "1", "2", "foo"
+            }
+
+            for (var i of list) {
+                console.log(i); // logs 3, 5, 7
+            }
+        }
+
+        magicHappen(zooAnimals);
+        // console.log(JSON.stringify(magicHappen(zooAnimals)));
+        console.log(last_element);
+
+        var myFarm = ["chicken", "pigs", "cows", "horses", "ostriches"];
+        for (var i = 0; i < myFarm.length; i++) {
+           console.log(myFarm[i]);
+           if (myFarm[i].startsWith("c") || myFarm.startsWith('o')) {
+               alert("start my animal like:"+myFarm[i][0])
+           }
+            
+        }
+
+    </script>
+
+</body>
+
+</html>

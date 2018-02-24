@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors Part 1</title>
+</head>
+
+<body>
+
+    <div id="game">
+        Press r, s or p start playing!
+    </div>
+
+    <script type="text/javascript">
+        // Whenever a key is pressed, alert "pressed a button".
+        var combinations = ['s', 'r', 'p'];
+        var countTies = 0;
+        var countLoss = 0;
+        var countWin = 0;
+
+        var gameStatus = document.getElementById("game");
+
+        document.onkeyup = function () {
+            alert("pressed a button");
+
+            
+            // var win, loss, ties;
+            var userGuess = event.key;
+            
+            //freeze key only pass r,s,p
+            var computerGuess = combinations[Math.floor(Math.random() * combinations.length)];
+
+                // Alerts the key the user pressed (userGuess).
+            alert("User guess: " + userGuess);
+
+            // Alerts the Computer's guess.
+            alert("Computer guess: " + computerGuess);
+            if (combinations.length > -1) {
+
+                //choice.forEach(function(item, index, array) {
+                
+                    if (userGuess === computerGuess) {
+                        countTies++;
+                        console.log('ties: ' + countTies);
+                    } else if (userGuess !== computerGuess) {
+                        if (userGuess === 'r' && computerGuess === 'p') {
+                            countLoss++;
+                            console.log(computerGuess);
+                        } else if (userGuess === 'p' && computerGuess === 'r') {
+                            countWin++;
+                            console.log('win: '+userGuess);
+                        } else if (userGuess === 's' && computerGuess === 'p') {
+                            countLoss++;
+                            console.log('win'+computerGuess);
+                        }
+                        else{
+                            countLoss;
+                        }
+                    } 
+                //});
+            }
+
+            gameStatus.innerHTML = "<p>You chose: "+userGuess+"</p>"+
+            "<p>Computer guest: "+computerGuess+"</p>"+
+            "<p>Wins: "+countWin+"</p>"+
+            "<p>Loss: "+countLoss+"</p>"+
+            "<p>Ties: "+countTies+"</p>";
+        };
+
+        //
+    </script>
+
+</body>
+
+</html>
