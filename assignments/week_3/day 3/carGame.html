@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My First Game</title>
+</head>
+
+<body>
+
+    <div id="game">Car Adventures!</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+        document.onkeyup = function (event) {
+            // Determines which key was pressed.
+            var userEnter = event.key;
+
+            
+            function reWriteStats(Object) {
+                //post the car status
+                
+                console.log('Model: ' + car.make);
+                // The car's model?
+                console.log('Model: ' + car.model);
+                // The car's mileage?
+                console.log('Mileage: ' + car.mileage);
+                // How would we run the car's driveToWork method?
+                console.log('Driver t Work: ' + car.driveToWork);
+                // How would we run the car's driveAroundWorld method?
+                console.log('Driver around: ' + car.driveAroundWorld);
+                // How would we run the getTuneUp method?
+                console.log('get TuneUp: ' + car.isWorking);
+                //Working
+                console.log('isWorking: ', car.isWorking());
+            }
+
+            var car = {
+                make: "Honda",
+                model: "Fit",
+                color: "Blue Raspberry",
+                mileage: 3000,
+                isWorking: true,
+
+                driveToWork: function () {
+
+                    alert("Old Mileage: " + this.mileage);
+
+                    this.mileage = this.mileage + 8;
+
+                    alert("New mileage: " + this.mileage);
+                },
+
+                driveAroundWorld: function () {
+
+                    alert("Old Mileage: " + this.mileage);
+
+                    this.mileage = this.mileage + 24000;
+
+                    alert("New Mileage: " + this.mileage);
+                    alert("Car needs a tuneup!");
+
+                    this.isWorking = false;
+                },
+
+                getTuneUp: function () {
+                    alert("Car is ready to go!");
+                    this.isWorking = true;
+                },
+
+                honk: function () {
+                    alert("Honk! Honk!");
+                }
+            };
+
+
+            // How would we log...
+
+            // The car's make?
+            
+            if (userEnter === 'h') {
+                car.honk();
+                reWriteStats();
+            }else if (userEnter === 'w') {
+                car.driveAroundWorld();
+                reWriteStats();
+            }else if (userEnter === 't') {
+                car.getTuneUp();
+                reWriteStats();
+            }else if (userEnter === 'r') {
+                car.isWorking();
+                reWriteStats();
+            }
+            console.log('----------------------------');
+
+            var html = "<p>Type H to honk, D to drive to work, W to drive around the</p>" +
+                "<p>world, or T to get a tuneup</p>" +
+                "<p>See console for car stats</p>";
+
+            // Set the inner HTML contents of the #game div to our html string
+            document.querySelector("#game").innerHTML = html;
+        }
+
+        //Another alternative is
+
+        $('#game').keyup(function(key) {
+            var code = (key.keyCode) ? key.keyCode : key.which;
+
+            if(code === '66'){
+                console.log(car.getTuneUp);
+            } else if(code === '68'){
+                console.log(car.honk);
+            } else if(code === '77'){
+                console.log(car.isWorking);
+            }
+            else if (code === '87') {
+                console.log(car.driveAroundWorld);
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
