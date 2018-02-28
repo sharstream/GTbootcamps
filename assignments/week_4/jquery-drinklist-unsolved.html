@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Content!</title>
+</head>
+<body>
+
+  <h1>Drink Selection!</h1>
+  <hr>
+
+  <div id="drink-options"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+
+    var drinkList = [
+      "Coffee: $5",
+      "Espresso: $7",
+      "Cappuccino: $6",
+      "Latte: $4",
+      "Tea: $3",
+      "Ice Coffee: $6",
+      "Ice Espresso: $8",
+      "Ice Latte: $6",
+      "Ice Tea: $4"
+    ];
+
+    // Using JavaScript programmatically append each drinkList item to the "drink-options" div
+    // HINT: you will need a for loop to go over each element in the list
+
+      // for (var i = 0; i < drinkList.length; i++) {
+      //   var newTag = $("<ul>");
+
+      //   // var newTag = $("<ul>");
+      //   newTag.text(drinkList[i]);
+      //   // $("drink-options").text = drinkList[i];
+      //   $("drink-options").append(newTag);
+      //     // $("drink-options").html("<ul>"+drinkList[i]+"</ul>");
+      //   console.log($("drink-options").append(newTag));
+      // }
+    //first solution
+    var list=[];
+    // $(document).ready(function () {
+    for (i = 0; i < drinkList.length; i++) {
+      list += "<ul>" + drinkList[i] + "</ul>";
+    }
+    $("#drink-options").append(list);
+
+    // // });
+    //second solution using foreach
+    drinkList.forEach(function(item, index, array){
+      $("#drink-options").append("<ul>"+item+"</ul>")
+    });
+    
+  </script>
+
+</body>
+</html>
