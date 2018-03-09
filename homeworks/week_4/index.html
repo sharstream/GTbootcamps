@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Start Wars Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <header>Star Wars RPG!</header>
+    </div>
+    <div id="container">
+        <p>Your Character</p>
+        <div class="row col-md-12 shake-little">
+            <div type="button" class="darth_vader col-6 col-sm-3" characterName ="Darth Vader" health = "400" attack = "8"
+            counterAttack = "20">
+                <h3>Darth Vader</h3>
+                <img id="darth_vader" class="starImage character-image" src="assets/images/darth_vader.png"
+                alt="character">
+                <p>400</p>
+            </div>
+            <div type="button" class="obi_wan col-6 col-sm-3" characterName ="Obi Wan" health = "500" attack = "10"
+            counterAttack = "20">
+                <h3>Obi Wan</h3>
+                <img id="obi_wan" class="starImage character-image" src="assets/images/obi_wan.jpg"
+                alt="character">
+                <p>500</p>
+            </div>
+            <div type="button" class="yoda col-6 col-sm-3" characterName ="Yoda" health = "600" attack = "9"
+            counterAttack = "20">
+                <h3>Yoda</h3>
+                <img id="yoda" class="starImage character-image" src="assets/images/yoda.png"
+                alt="character">
+                <p>600</p>
+            </div>
+            <div type="button" class="porg col-6 col-sm-3" characterName ="Luke Skywalker" health = "600" attack = "15"
+            counterAttack = "20">
+                <h3>Luke Skywalker</h3>
+                <img id="porg" class="starImage character-image" src="assets/images/luke.png"
+                alt="character">
+                <p>600</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="chooseCharBox"></div>
+    <div id="character" class="shake-slow selected_character"></div>
+    <br>
+    <div class="enemiesBox">
+        <div class="enemies"></div>
+        <p>Enemies Available to Attack</p>
+    </div>
+    <br>
+    <br>
+    <div class="fightBox"></div>
+        <p>Fight Section</p>
+        <button class="shake-hard btn-attack">Attack</button>
+    <br>    
+    </div>
+    <br>
+    <div class="shake-soft defenderBox"><p>Your Defender</p>
+        <div id="defender" class="defender_character"></div>
+    </div>
+    <br>
+    <!-- Note that this div is now empty. We will fill it dynamically -->
+    <div id="defeat">
+    </div>
+    <div class="clear">
+        <button onload="resetGame()">Reset Game</button>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

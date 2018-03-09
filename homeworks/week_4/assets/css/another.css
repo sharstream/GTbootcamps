@@ -1,0 +1,20 @@
+.character {
+    width: 570px;
+    height: 150px;
+    margin: 10px 0 0 10px;
+    background-color: orange;
+}
+
+.enemies {
+    width: 570px;
+    height: 150px;
+    margin: 60px 0 0 10px;
+    background-color: orange;
+}
+
+.fightSection {
+    width: 570px;
+    height: 150px;
+    margin: 60px 0 0 10px;
+    background-color: orange;
+}
