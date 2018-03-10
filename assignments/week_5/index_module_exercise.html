@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Activity 16 week 5 day 3</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+
+<body>
+
+    <div id="text-wrapper">
+        <h1>Print Fizz</h1>
+        <p>Write a script that prints the numbers 1 to 100 in the console. But for multiples of three, print `Fizz` instead of the number.
+        For multiples of five, print `Buzz`. For numbers which are multiples of both three and five, print `FizzBuzz`.</p>
+        <div id="print"></div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        var numbers = [];
+        
+        for(var i =1; i < 100; i++){
+            // numbers[i] = (Math.random() * 100);
+            if(i % 3 === 0 && i % 5 === 0){
+                document.write('FizzBuzz');
+            }
+            else if (i % 3 === 0) {
+                document.write('<br>' +'Fizz');
+            }
+            else if (i % 5 === 0) {
+                document.write('<br>' +'Buzz');
+            }
+        }
+        // console.log(numbers.length);
+        // console.log(numbers);
+
+        //print fizz multiple of three
+        //every number multiple of three
+        
+        //print buzz m ultiple of 5
+
+    </script>
+</body>
+
+
+</html>
