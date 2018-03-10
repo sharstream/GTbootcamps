@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Activity 23 week 5 day 3</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+
+<body>
+
+    <div id="text-wrapper">
+        <h1>isPrime Validator</h1>
+        <p>* Write a function that checks to see if a number is a prime number or not. Have it return `true` if it is, or `false` if
+        it isn't. * 
+        A Prime number is a number greater than one that can only be divided by one and itself. 
+        * [More info on Prime
+        numbers](https://www.mathsisfun.com/prime_numbers.html)</p>
+        <div id="isPrime"></div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        //select any range
+        var maxnumber = 100;
+        var primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
+        // var numbers = [1, 4, 6, 7];
+
+        var num = 3;
+
+        function checkprimenumber(n) {
+            for (c = 2; c <= n; c++) {
+                if (n % c == 0) {
+                    console.log('this number is not prime', n)
+                    return false;
+                }
+                console.log('this number is prime', n)
+                return true;
+            }
+        }
+
+        // arrow function scope
+        let isPrime = (x) => {
+            for (var i = 2; i < x; i++) {
+                if (x % i == 0) {
+                    console.log('this number is not prime', x)
+                    return false;
+                } else {
+                    console.log('this number is prime', x )
+                    return true;
+                }
+            }
+        }
+        
+        console.log('for each function');
+        primeNumbers.forEach(x => checkprimenumber(x));
+
+        var result = checkprimenumber(num);
+        console.log('return: '+ result);
+        
+        function printprimenumber(number) {
+            if (checkprimenumber(number) == true) {
+               console.log(number + " is Prime Number ");
+            } else {
+                console.log(number+" is Not Prime Number");
+            }
+        }
+
+        function printnumbers(range) {
+            for (i = 1; i <= range; i++) {
+                printprimenumber(i);
+            }
+        }
+
+        // printnumbers(maxnumber);
+    </script>
+</body>
+
+
+</html>
