@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="frontend.js"></script>
+    <script src="backend.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">NY Times</h1>
+        <p class="lead"></p>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Search</h3>
+    </div>
+    <div class="panel-body">
+        <div class="form-group">
+            <label>Keyword</label>
+            <input type="text" class="form-control" id="keyword">
+        </div>
+        <div class="form-group">
+            <label>Page Number</label>
+            <input type="text" class="form-control" id="pageNumber">
+        </div>
+        <button type="button" class="get_related_article btn-primary" id="submit">Submit</button>
+        <button type="button" class="btn btn-primary" id="clearResults">Clear Results</button>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Top Articles</h3>
+    </div>
+    <div class="panel-body">
+        <div id="results">
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+</body>
+</html>
