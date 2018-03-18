@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Favorite Movies</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Basic Table</h2>
+    <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Movie Name</th>
+          <th>Year</th>
+          <th>Actors</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Insert movie rows here -->
+      </tbody>
+    </table>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    // The below code fills in the first row of the table
+    // var movie = "Mr. Nobody";
+    
+ 
+    var searchOMDB = function(movie){
+      var queryURL = "https://www.omdbapi.com/?s=" + movie + "&y=&plot=short&apikey=trilogy";
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      }).then(function(response) {
+        createRow(movie);
+      });
+
+      function createRow(movie) {
+        
+        debugger
+        // Obtain a reference to the tbody element in the DOM
+        var tbody = $('tbody');
+        
+        // for(var )
+        // Create and save a reference to new empty table row
+        var newtable = $('tbody');
+        var row = $('<tr>');
+        // Create and save references to 3 td elements containing the Title, Year, and Actors from the AJAX response object
+
+        // $('.table > tbody:last-child').append('<td>' + response.Title + '</td>');
+        // $('.table > tbody:last-child').append('<td>' + response.Year + '</td>');
+        // $('.table > tbody:last-child').append('<td>' + response.Actors + '</td>');
+        // var row = $('tbody').append('<tr>');
+        var rowTitle = $('<td>' + response.Title + '</td>');
+        console.log('Title: '+response.Title);
+        var rowYear = $('<td>' + response.Year + '</td>');
+        console.log('Year: ' + response.Year);
+        var rowActors = $('<td>' + response.Actors + '</td>');
+        console.log('Actors: ' + response.Actors);
+
+        row.append(rowTitle);
+        row.append(rowYear);
+        row.append(rowActors);
+
+        tbody.append(row);
+      // Append the td elements to the new table row
+      // Append the table row to the tbody element
+      }
+
+      searchOMDB('Avatar');
+      searchOMDB('Robocop');
+      searchOMDB('Terminator');
+
+    // Repeat the above logic to add rows for two more movies of your choice
+
+    // BONUS: Once complete, try to make your code as DRY as possible through the use of functions
+  </script>
+</body>
+
+</html>

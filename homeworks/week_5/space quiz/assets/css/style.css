@@ -1,0 +1,82 @@
+body {
+    /* background: yellow; */
+    background: url(../images/space.jpg);
+    font-family: 'Lato', sans-serif;
+    background-position: 50% 50%;
+    background-clip: padding-box;
+}
+
+#after_submit {
+    visibility: hidden;
+}
+
+.container {
+    transition: 2s all ease-in-out;
+    margin: 5% 0 5% 20%;
+    padding: 50px;
+    display: grid;
+    background-color: pink;
+    width: 40%;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    margin-left: 2%;
+}
+
+h1 {
+    color: blue;
+}
+
+.container #reset, #next, #check {
+    width: 18%;
+    margin-left: 40%;
+}
+
+.progress {
+    width: 7%;
+}
+
+#reset {
+    visibility: hidden;
+}
+
+.radio-pink [type="radio"]:checked+label:after {
+    border-color: #e91e63;
+    background-color: #e91e63;
+}
+
+/*Gap*/
+
+.radio-pink-gap [type="radio"].with-gap:checked+label:before {
+    border-color: #e91e63;
+}
+
+.radio-pink-gap [type="radio"]:checked+label:after {
+    border-color: #e91e63;
+    background-color: #e91e63;
+}
+
+.question1 {
+
+}
+.question2 {
+
+}
+.question3 {
+
+}
+.question4 {
+
+}
+.question5 {
+
+}
+
+.option:hover {
+    background: rgba(39, 67, 99, 0.25) !important;
+    color: white !important;
+}

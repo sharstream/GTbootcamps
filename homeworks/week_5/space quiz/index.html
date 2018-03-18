@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Trivial Game</title>
+    <!-- Our CSS style sheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+ 
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Space NASA Quiz</h1>
+        
+        <span id="timer"></span>
+        <br>
+        <div class="progress">0/5</div>
+        <form class="quiz" name="question">
+            <div>
+                <p class="question"></p>
+                <div class="options">
+                </div>
+            </div>
+            <br>
+            <br>
+        </form>
+         <input id="check" type="button" value="Check!">
+            <br>
+            <!-- <input id="next" type="button" value="Next Page!"> -->
+            <br>
+        <input id="reset" type="button" value="Reset!">
+        <br>
+        <br>
+        <p id="prompt1"></p>
+        <p id="prompt2"></p>
+        <div id="after_submit">
+            <p id="number_correct">Correct: </p>
+            <p id="number_incorrect">Incorrect: </p>
+            <p id="number_unanswered">Unanswered: </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
