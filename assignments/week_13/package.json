@@ -1,0 +1,15 @@
+{
+  "name": "mysql_demo",
+  "version": "1.0.0",
+  "description": "mysql demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Perez",
+  "license": "MIT",
+  "dependencies": {
+    "dot-env": "0.0.1",
+    "mysql": "^2.15.0"
+  }
+}
