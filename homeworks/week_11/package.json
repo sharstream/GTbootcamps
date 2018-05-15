@@ -1,0 +1,23 @@
+{
+  "name": "word_repository",
+  "version": "1.0.0",
+  "description": "Advanced JS guess game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sharstream@github.com/sharstream/word_repository.git"
+  },
+  "author": "David Perez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sharstream/word_repository/issues"
+  },
+  "homepage": "https://github.com/sharstream/word_repository#readme",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "inquirer": "^5.2.0"
+  }
+}

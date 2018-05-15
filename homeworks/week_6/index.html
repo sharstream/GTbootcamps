@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gif Tastic Animal Library</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/backend.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Animal Lab</h1>
+            <p class="title"></p>
+        </div>
+    </div>
+
+    <div id="animal-buttons"></div>
+    <form id="animal-form">
+        <label for="animal-input">Enter an Animal</label>
+        <input type="text" placeholder="search for animal" class="animal_search_input">
+        <button type="button" class="get_animal btn btn-primary" id="submitResult">Submit</button>
+        <button type="button" class="btn btn-primary" id="clearResults">Clear Results</button>
+    </form>   
+    <br>
+    <br>
+    <div id="animals"></div>
+</body>
+
+</html>

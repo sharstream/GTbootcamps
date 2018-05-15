@@ -1,0 +1,27 @@
+{
+  "name": "friendradar",
+  "version": "1.0.0",
+  "description": "Friend Finder - Node and Express Servers application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharstream/friendRadar.git"
+  },
+  "author": "David Perez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sharstream/friendRadar/issues"
+  },
+  "homepage": "https://github.com/sharstream/friendRadar#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.4",
+    "npm": "^6.0.1"
+  }
+}

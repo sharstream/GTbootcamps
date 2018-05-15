@@ -1,0 +1,23 @@
+button, div, form, input {
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+#animal-buttons {
+    margin-left: 10%;
+}
+
+#animal-form {
+    margin-left: 10%;
+}
