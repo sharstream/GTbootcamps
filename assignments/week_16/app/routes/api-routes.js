@@ -105,7 +105,7 @@ module.exports = function(app) {
             short_books.push(item);
           }
         });
-        res.json(long_books);
+        res.json(short_books);
       })
     } else {
       console.log(`No Book with short page has been found.`);
